@@ -85,7 +85,7 @@ public class Tokenizer {
         while(true){
             IdentOrKeyword+=it.nextChar();
             char peek=it.peekChar();
-            if(Character.isAlphabetic(peek)){
+            if(Character.isAlphabetic(peek)||Character.isDigit(peek)){
                 continue;
             }
             else{
